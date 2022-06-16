@@ -3,19 +3,18 @@ import 'package:foodie/constants/api_constants.dart';
 import 'package:foodie/models/random_meal_model.dart';
 import 'package:http/http.dart' as http;
 
-Future<List<MealsModel>> getRandomMeal() async {
-  List<MealsModel> responseList;
+Future<List<RandomMealModel>> getRandomMeal() async {
+  List<RandomMealModel> list;
   var APIURL = Endpoints.random;
-  print(APIURL);
 
   final response = await http.get(Uri.parse(APIURL));
 
   if(response.statusCode == 200) {
     var responseData = jsonDecode(response.body);
-    responseList = responseData.map<MealsModel>((json) => Meals.fromJson(json));
-    print("responseData : $responseData");
-    //print("responseList : $responseList");
-    return responseList;
+    var responseList = responseData["meals"];
+    print(responseList);
+    list = responseList.map<RandomMealModel>((json) => RandomMealModel.fromJson(json)).toList();
+    return list;
   }
   else {
     throw Exception("failed to fetch random meal");

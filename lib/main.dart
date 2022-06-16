@@ -27,7 +27,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  late Future<List<MealsModel>> getMeal;
+ /* late Future<List<MealsModel>> getMeal;
 
   @override
   void initState() {
@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
       getMeal = getRandomMeal();
     });
   }
-
+ */
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            ElevatedButton(onPressed: () {
+            ElevatedButton(onPressed: () { getRandomMeal();
             },
                 child: const Text("Click for random meal idea"))
           ],

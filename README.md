@@ -4,7 +4,10 @@ A new Flutter project.
 
 ## Credits
 
-### Illustrations
+# API's credit
+https://www.themealdb.com/api.php
+
+# Illustrations
 https://dribbble.com/shots/15084769-Favorite-food/attachments/6815074?mode=media
 https://dribbble.com/shots/15955423-Yum/attachments/7789884?mode=media
 https://dribbble.com/shots/15778281-Yummy/attachments/7585838?mode=media
@@ -15,7 +18,7 @@ https://dribbble.com/shots/16348828-Restaurant-2D-Illustration-Chinese-Food/atta
 https://dribbble.com/shots/16024017-Restaurant-Business-Graphics-Cooking-Process-Illustration/attachments/7865719?mode=media
 https://dribbble.com/shots/15961250-Restaurant-Choose-Your-Dish/attachments/7796339?mode=media
 
-### APP design Ideas
+# APP design Ideas
 https://dribbble.com/shots/17501406-Cooking-App
 https://dribbble.com/shots/15921850-Recipe-App
 https://dribbble.com/shots/15261358-Recipe-App-Concept
